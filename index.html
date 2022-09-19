@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css flexbox</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&family=Poppins&display=swap');
+    .holdingcontainer{
+      width: 100%;
+      display: flex;
+      background-color: hsla(0, 14%, 83%, 0.75);
+      box-sizing: border-box;
+      flex-direction: row;
+      padding: 60px;
+    }
+
+    .internalcontainerL{
+      flex: 1;
+      height: 500px;
+      background-color: hsl(31, 77%, 52%);
+      padding: 20px;
+      font-size: 20px;
+      color: white;
+      font-weight: 200px;
+    }
+
+    .internalcontainerR{
+      flex: 1;
+      height: 500px;
+      background-color: hsl(184, 100%, 22%);
+      padding: 20px;
+      font-size: 20px;
+      color: white;
+    }
+
+    .internalcontainerS{
+      flex: 1;
+      background-color: hsl(179, 100%, 13%);
+      padding: 20px;
+      font-size: 20px;
+      color: white;
+    }
+
+
+    .button{
+      background-color: #fff;
+      padding: 13px 30px;
+      border: 2px solid;
+      border-radius: 30px;
+      color: hsl(31, 77%, 52%);
+      font-size: 15px;
+      transition: .4s;
+      margin-top: 70px;
+    }
+
+    .button-a{
+      background-color: #fff;
+      padding: 13px 30px;
+      border: 2px solid;
+      border-radius: 30px;
+      color: hsl(184, 100%, 22%);
+      font-size: 15px;
+      transition: .4s;
+      margin-top: 70px;
+    }
+
+    .button-b{
+      background-color: #fff;
+      padding: 13px 30px;
+      border: 2px solid;
+      border-radius: 30px;
+      color: hsl(179, 100%, 13%);
+      font-size: 15px;
+      transition: .4s;
+      margin-top: 70px;
+    }
+
+  
+
+    .button:hover{
+      background-color: hsl(31, 77%, 52%);
+      color: #fff;
+    }
+
+    .button-a:hover{
+      background-color: hsl(184, 100%, 22%);
+      color: #fff;
+    }
+
+    .button-b:hover{
+      background-color: hsl(179, 100%, 13%);
+      color: #fff;
+    }
+
+
+    
+
+    
+    @media screen and (max-width: 768px){
+      .holdingcontainer{
+        flex-direction: column-reverse;
+      }
+      
+    }
+</style>
+<body>
+  <div class="holdingcontainer">
+    <div class="internalcontainerL">
+      <img src="file:///C:/Users/user/Downloads/icon-sedans.svg" alt="">
+      <h1 class="text">SEDANS</h1>
+      <P>Choose a sedans for its <br> affordability and excellent <br> fual economy. Ideal for cruising in the city 
+         or on your next road trip.</P>
+      <button class="button">Learn more</button>
+    </div>
+
+    <div class="internalcontainerR">
+      <img src="file:///C:/Users/user/Downloads/icon-suvs.svg" alt="">
+      <h1 class="text-a">SUVS</h1>
+      <p>Take an SUV for its spacious <br> interior, power and <br>versatility. <br> Perfect for your <br>
+         next family vacation and off-road adventures.</p>
+         <button class="button-a">Learn more</button>
+    </div>
+
+    <div class="internalcontainerS">
+      <img src="file:///C:/Users/user/Downloads/icon-luxury.svg" alt="">
+      <h1 class="text-b">LUXURY</h1>
+      <p>Cruise in the best car brands <br> without the bloated prices. <br> Enjoy the enhanced comfort 
+        <br> of a luxury rental <br> and arrive in style. </p>
+        <button class="button-b">Learn more</button>
+    </div>
+
+  </div>
+</body>
+</html>
