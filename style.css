@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@200&family=Poppins&display=swap');
+.holdingcontainer{
+  width: 100%;
+  display: flex;
+  background-color: hsla(0, 14%, 83%, 0.75);
+  box-sizing: border-box;
+  flex-direction: row;
+  padding: 60px;
+}
+
+.internalcontainerL{
+  flex: 1;
+  height: 500px;
+  background-color: hsl(31, 77%, 52%);
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+  font-weight: 200px;
+}
+
+.internalcontainerR{
+  flex: 1;
+  height: 500px;
+  background-color: hsl(184, 100%, 22%);
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+.internalcontainerS{
+  flex: 1;
+  background-color: hsl(179, 100%, 13%);
+  padding: 20px;
+  font-size: 20px;
+  color: white;
+}
+
+
+.button{
+  background-color: #fff;
+  padding: 13px 30px;
+  border: 2px solid;
+  border-radius: 30px;
+  color: hsl(31, 77%, 52%);
+  font-size: 15px;
+  transition: .4s;
+  margin-top: 70px;
+}
+
+.button-a{
+  background-color: #fff;
+  padding: 13px 30px;
+  border: 2px solid;
+  border-radius: 30px;
+  color: hsl(184, 100%, 22%);
+  font-size: 15px;
+  transition: .4s;
+  margin-top: 70px;
+}
+
+.button-b{
+  background-color: #fff;
+  padding: 13px 30px;
+  border: 2px solid;
+  border-radius: 30px;
+  color: hsl(179, 100%, 13%);
+  font-size: 15px;
+  transition: .4s;
+  margin-top: 70px;
+}
+
+
+
+.button:hover{
+  background-color: hsl(31, 77%, 52%);
+  color: #fff;
+}
+
+.button-a:hover{
+  background-color: hsl(184, 100%, 22%);
+  color: #fff;
+}
+
+.button-b:hover{
+  background-color: hsl(179, 100%, 13%);
+  color: #fff;
+}
+
+
+
+
+
+@media screen and (max-width: 768px){
+  .holdingcontainer{
+    flex-direction: column-reverse;
+  }
+  
+}
